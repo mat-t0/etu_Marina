@@ -8,6 +8,7 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+int get_command()
 {
 
 	setlocale(LC_CTYPE, "");
@@ -19,7 +20,7 @@
 
 
 	if (("%d", a) != 49 && ("%d", a) != 50 && ("%d", a) != 51 && ("%d", a) != 27 && ("%d", a) != 13 && ("%d", a) != 72 && ("%d", a) != 80)
-		printf("Неверный ввод. Нажмите 'Enter' и повторите попытку\n");
+		printf("ГЌГҐГўГҐГ°Г­Г»Г© ГўГўГ®Г¤. ГЌГ Г¦Г¬ГЁГІГҐ 'Enter' ГЁ ГЇГ®ГўГІГ®Г°ГЁГІГҐ ГЇГ®ГЇГ»ГІГЄГі\n");
 
 	return ("%d", a);
 }
