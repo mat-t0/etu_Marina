@@ -1,0 +1,1 @@
+int n_readline(const char* fname, int n, char* buf, int len);
