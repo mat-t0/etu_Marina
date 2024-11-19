@@ -56,10 +56,10 @@ int main()
 			printf("Введите дату: ");
 			int data1 = data();
 			char data10 = ("%02d.%02d.%d", data1%100, (data1/100)%100, data1/10000);
-			ofstream fout;
-			fout.open("data.txt");
-			fout << data10;
-			fout.close();
+			std::ofstream vmdelet_out;     //создаем поток 
+			vmdelet_out.open("data.txt", std::ios::app);  // открываем файл для записи в конец
+			vmdelet_out << data10; // сама запись
+			vmdelet_out.close();   // закрываем файл
 			system("cls");
 			print_panel(1);
 			printf("Введённая дата: %02d.%02d.%d", data1 % 100, (data1 / 100) % 100, data1 / 10000);
